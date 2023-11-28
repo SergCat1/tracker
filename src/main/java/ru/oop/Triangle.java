@@ -20,7 +20,6 @@ public class Triangle {
         boolean sideA = ab + ac > bc;
         boolean sideB = ab + bc > ac;
         boolean sideC = ac + bc > ab;
-
         return sideA && sideB && sideC;
     }
 
@@ -31,7 +30,6 @@ public class Triangle {
         double bc = second.distance(third);
         if (this.exist(ab, ac, bc)) {
             double p = semiPerimeter(ab, ac, bc);
-
             rsl = Math.sqrt(p * (p - ab) * (p - bc) * (p - ac));
         }
         return rsl;

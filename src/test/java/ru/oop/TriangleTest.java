@@ -1,7 +1,6 @@
 package ru.oop;
 
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.offset;
 
@@ -27,6 +26,4 @@ public class TriangleTest {
         double expected = -1;
         assertThat(rsl).isCloseTo(expected, offset(0.001));
     }
-
-
 }
