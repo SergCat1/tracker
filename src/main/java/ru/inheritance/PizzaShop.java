@@ -1,5 +1,4 @@
 package ru.inheritance;
-
 public class PizzaShop {
     public static void main(String[] args) {
         Pizza pizza = new Pizza();
@@ -9,6 +8,4 @@ public class PizzaShop {
         System.out.println(pizzaExtraCheese.name());
         System.out.println(pizzaExtraCheeseExtraTomato.name());
     }
-
-
 }
