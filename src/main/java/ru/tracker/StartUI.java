@@ -1,5 +1,4 @@
 package ru.tracker;
-
 import java.time.format.DateTimeFormatter;
 
 public class StartUI {
