@@ -1,12 +1,13 @@
 package ru.pojo;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class Student {
 
     private String fullname;
     private String group;
-    private Date admissiondate;
+    private LocalDate admissiondate;
 
     public String getFullname() {
         return fullname;
@@ -24,11 +25,11 @@ public class Student {
         this.group = group;
     }
 
-    public Date getAdmissiondate() {
+    public LocalDate getAdmissiondate() {
         return admissiondate;
     }
 
-    public void setAdmissiondate(Date admissiondate) {
+    public void setAdmissiondate(LocalDate admissiondate) {
         this.admissiondate = admissiondate;
     }
 }
