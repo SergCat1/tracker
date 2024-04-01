@@ -1,4 +1,5 @@
 package ru.tracker;
+
 import java.time.format.DateTimeFormatter;
 
 public class StartUI {
@@ -7,6 +8,9 @@ public class StartUI {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
         String currentDateTimeFormat = show.getCreated().format(formatter);
         System.out.println("Текущие дата и время после форматирования: " + currentDateTimeFormat);
+        Item date = new Item();
+        System.out.println("Текущие дата и время после форматирования: " + date
+        );
 
     }
 }
