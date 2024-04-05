@@ -18,14 +18,17 @@ public class StartUI {
                 System.out.println("Добавленная заявка: " + item);
             } else if (select == 6) {
                 run = false;
-            }
-            Item[] items = tracker.findAll();
-            if (items.length > 0) {
-                for (Item item : items) {
-                    System.out.println(item);
+            } else if (select == 1) {
+                System.out.println("=== Вывод всех заявок ===");
+                Item[] items = tracker.findAll();
+                if (items.length > 0) {
+                    for (Item item : items) {
+                        System.out.println(item);
+                    }
+                } else {
+                    System.out.println("Хранилище еще не содержит заявок");
                 }
-            } else {
-                System.out.println("Хранилище еще не содержит заявок");
+
             }
         }
     }
@@ -48,3 +51,4 @@ public class StartUI {
         new StartUI().init(scanner, tracker);
     }
 }
+
