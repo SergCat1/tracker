@@ -1,5 +1,4 @@
 package ru.tracker;
-
 import java.util.Scanner;
 
 public class StartUI {
