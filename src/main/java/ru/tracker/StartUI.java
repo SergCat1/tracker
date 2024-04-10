@@ -39,12 +39,12 @@ public class StartUI {
                 } else {
                     System.out.println("Ошибка замены заявки.");
                 }
-            }
-            else if (select == 6) {
+            } else if (select == 6) {
                 run = false;
             }
         }
     }
+
     private void showMenu() {
         String[] menu = {
                 "Добавить новую заявку", "Показать все заявки", "Изменить заявку",
