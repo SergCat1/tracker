@@ -16,8 +16,7 @@ public class StartUI {
                 Item item = new Item(name);
                 tracker.add(item);
                 System.out.println("Добавленная заявка: " + item);
-            }
-            else if (select == 1) {
+            } else if (select == 1) {
                 System.out.println("=== Вывод всех заявок ===");
                 Item[] items = tracker.findAll();
                 if (items.length > 0) {
@@ -27,8 +26,7 @@ public class StartUI {
                 } else {
                     System.out.println("Хранилище еще не содержит заявок");
                 }
-            }
-            else if (select == 2) {
+            } else if (select == 2) {
                 System.out.println("=== Редактирование заявки ===");
                 System.out.print("Введите id: ");
                 int id = Integer.parseInt(scanner.nextLine());
