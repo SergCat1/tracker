@@ -1,6 +1,7 @@
 package ru.poly;
 
 public interface Transport {
+
     void move();
 
     void passanger(int number);
