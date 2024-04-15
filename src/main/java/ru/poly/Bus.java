@@ -1,6 +1,6 @@
 package ru.poly;
 
-public class Bus implements  Transport {
+public class Bus implements Transport {
     @Override
     public void move() {
         System.out.println("Старт движения");
@@ -12,7 +12,7 @@ public class Bus implements  Transport {
     }
 
     @Override
-    public double fuel(double fuel_number) {
-        return fuel_number * 50.39;
+    public double fuel(double fuel) {
+        return fuel * 50.39;
     }
 }
