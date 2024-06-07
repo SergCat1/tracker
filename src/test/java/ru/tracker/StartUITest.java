@@ -1,6 +1,7 @@
 package ru.tracker;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -23,13 +24,12 @@ class StartUITest {
         tracker.add(item);
         String[] answers = {
                 String.valueOf(item.getId()),
-                "edited item"
-        };
+                "edited item"};
         StartUI.editItem(new MockInput(answers), tracker);
         Item edited = tracker.findById(item.getId());
         assertThat(edited.getName()).isEqualTo("edited item");
-
     }
+
     @Test
     void deleteItem() {
         Tracker tracker = new Tracker();
@@ -41,6 +41,5 @@ class StartUITest {
         StartUI.deleteItem(new MockInput(answers), tracker);
         Item deleted = tracker.findById(item.getId());
         assertNull(deleted);
-
     }
 }
